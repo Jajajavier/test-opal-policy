@@ -13,35 +13,32 @@
         "dspPricing",
         "creative",
         "asset",
-        "plaFeed",
-        "report"
+        "plaFeed"
     ],
     "roles": {
-        "AMPLIFY_DEMAND_MANAGER": [
-            {"view": ["brand", "advertiser", "campaign", "audience", "creative", "asset", "plaFeed", "report"]},
-            {"edit": ["insertionOrder", "dspPricing"]}
+        "DEMAND_ADMIN": [
+            {"view": ["brand", "publisher", "page", "placement", "control", "sspPricing", "advertiser", "campaign", "audience", "dspPricing", "creative", "asset", "plaFeed"]},
+            {"edit": ["insertionOrder"]}
         ],
-        "AMPLIFY_DEMAND_EDITOR": [
+        "DEMAND_USER": [
             {"view": ["publisher", "page", "placement", "control", "sspPricing", "plaFeed"]},
-            {"edit": ["brand", "advertiser", "insertionOrder", "campaign", "audience", "dspPricing", "creative", "asset", "report"]}
+            {"edit": ["brand", "advertiser", "insertionOrder", "campaign", "audience", "dspPricing", "creative", "asset"]}
         ],
-        "AMPLIFY_SUPPLY_MANAGER": [
-            {"view": ["brand", "publisher", "page", "placement", "advertiser", "insertionOrder", "campaign", "audience", "dspPricing", "creative", "asset", "plaFeed", "report"]},
+        "SUPPLY_ADMIN": [
+            {"view": ["brand", "publisher", "page", "placement", "advertiser", "insertionOrder", "campaign", "audience", "dspPricing", "creative", "asset", "plaFeed"]},
             {"edit": ["control", "sspPricing"]}
         ],
-        "AMPLIFY_SUPPLY_EDITOR": [
+        "SUPPLY_USER": [
             {"view": ["advertiser", "insertionOrder", "campaign", "dspPricing", "plaFeed"]},
-            {"edit": ["brand", "publisher", "page", "placement", "control", "sspPricing", "audience", "creative", "asset", "report"]}
+            {"edit": ["brand", "publisher", "page", "placement", "control", "sspPricing", "audience", "creative", "asset"]}
         ],
-        "AMPLIFY_EXEC_MANAGER": [
-            {"view": ["brand", "publisher", "page", "placement", "control", "sspPricing", "advertiser", "insertionOrder", "campaign", "audience", "dspPricing", "creative", "asset", "plaFeed"]},
-            {"edit": ["report"]}
+        "EXEC_USER": [
+            {"view": ["brand", "publisher", "page", "placement", "control", "sspPricing", "advertiser", "insertionOrder", "campaign", "audience", "dspPricing", "creative", "asset", "plaFeed"]}
         ],
-        "AMPLIFY_ADMIN_MANAGER": [
-            {"view": ["brand", "publisher", "page", "placement", "control", "sspPricing", "advertiser", "insertionOrder", "campaign", "audience", "dspPricing", "creative", "asset", "plaFeed", "report"]}
+        "ADMIN": [
+            {"view": ["brand", "publisher", "page", "placement", "control", "sspPricing", "advertiser", "insertionOrder", "campaign", "audience", "dspPricing", "creative", "asset", "plaFeed"]}
         ],
-        "AMPLIFY_ADMIN_TECH": [
-            {"view": ["report"]},
+        "ADMIN_TECH": [
             {"edit": ["brand", "publisher", "page", "placement", "control", "sspPricing", "advertiser", "insertionOrder", "campaign", "audience", "dspPricing", "creative", "asset", "plaFeed"]}
         ]
     }
